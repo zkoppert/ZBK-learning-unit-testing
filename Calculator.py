@@ -12,8 +12,8 @@ class calculator():
 userInput=0
 
 if userInput != 0:
-	a=int(input("Enter first number"))
-	b=int(input("Enter second number"))
+	a=int(raw_input("Enter first number"))
+	b=int(raw_input("Enter second number"))
 
 #Create a Calculator that's ready to use
 	a_calculator=calculator(a,b)
@@ -24,7 +24,7 @@ if userInput != 0:
 		print("0. Exit")
 		print("1. Add")
 		print("2. Subtract")
-		choice=int(input("Enter Choice: "))
+		choice=int(raw_input("Enter Choice: "))
 		if choice == 1:
 			print("Result: ", a_calculator.add())
 		elif choice == 2:
@@ -35,5 +35,3 @@ if userInput != 0:
 			print("Invalid choice")
 
 	print()
-
-
